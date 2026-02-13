@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ lesson.title }}</title>
+</head>
+<body>
+    <nav>
+    <a href="{{ path('app_home') }}">Home</a> |
+    <a href="{{ path('current_lesson') }}">Current Lesson</a> |
+    <a href="{{ path('app_lessons') }}">Alle Lessons</a>
+</nav>
+<hr>
+    <h1>Lesson Detail</h1>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Titel</th>
+            <td>{{ lesson.title }}</td>
+        </tr>
+        <tr>
+            <th>Fach</th>
+            <td>{{ lesson.subject }}</td>
+        </tr>
+        <tr>
+            <th>Instructor</th>
+            <td>{{ lesson.instructor }}</td>
+        </tr>
+        <tr>
+            <th>Datum</th>
+            <td>{{ lesson.date }}</td>
+        </tr>
+        <tr>
+            <th>Beschreibung</th>
+            <td>{{ lesson.description }}</td>
+        </tr>
+    </table>
+
+</body>
+</html>
